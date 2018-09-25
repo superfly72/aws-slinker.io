@@ -1,0 +1,12 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - npm install
+      - aws cloudformation package --template-file sam_template.yaml --kms-key-id kms-key-id --s3-bucket slinker-lambda-deployment
+                                   --output-template-file output_sam_template.yaml
+artifacts:
+  type: zip
+  files:
+    - sam_template.yaml
+    - output_sam_template.yaml
