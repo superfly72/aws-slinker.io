@@ -1,5 +1,5 @@
 {
   "dynamodb_table" : "Slink",
-  "url_domain" : "https://www.slinker.link/slink",
+  "url_domain" : "https://api.slinker.link/slink",
   "uid_length" : 15
 }

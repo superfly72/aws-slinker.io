@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "link.slinker.flutterapp",
+    "sha256_cert_fingerprints":
+    ["7D:D4:A6:26:A4:23:1D:A1:D2:FC:4F:54:C3:4E:FE:92:31:3E:F6:DF:C0:34:92:7C:A9:BE:11:47:80:94:B1:4B"]
+  }
+}]
