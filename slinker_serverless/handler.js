@@ -1,10 +1,13 @@
 'use strict';
 const Slinker = require('./lib/slinker');
 const slinker = new Slinker();
+const Publisher = require('./lib/publisher')
+const publisher = new Publisher();
 
 module.exports.get = (event, context, callback) =>  {
   console.log("Get handler invoked ", JSON.stringify(event));
   slinker.get(event.pathParameters.uid, callback);
+  publisher.publish(event);
 };
 
 
@@ -19,4 +22,5 @@ module.exports.create = (event, context, callback) => {
   }
 
   slinker.create(data, callback);
+  publisher.publish(event);
 };

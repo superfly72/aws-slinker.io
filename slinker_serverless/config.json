@@ -1,5 +1,6 @@
 {
   "dynamodb_table" : "Slink",
   "url_domain" : "https://api.slinker.link/slink",
-  "uid_length" : 15
+  "uid_length" : 15,
+  "sns_arn": "arn:aws:sns:us-east-1:573944594968:slinker_topic"
 }
