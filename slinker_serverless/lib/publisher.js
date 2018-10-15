@@ -16,7 +16,7 @@ class Publisher {
 
         // Create publish parameters
         var params = {
-            Message: data, /* required */
+            Message: JSON.stringify(data), /* required */
             TopicArn: config.sns_arn
         };
 
